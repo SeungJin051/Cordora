@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="mportpolio.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+	<div data-role="page" id="page1">
+		<div data-role="header">
+			<h1>임승진</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page2">소개</a></li>
+					<li><a href="#page3">인적</a></li>
+					<li><a href="#page4">학술</a></li>
+					<li><a href="#page5">경력</a></li>
+				</ul>
+			</div>
+		</div>
+		<h1>
+			모바일 화면
+		</h1>
+	</div>
+
+	<div class="content" data-role="page" id="page2">
+		<div data-role="header">
+			<h1>임승진</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page2" class="ui-btn-active">소개</a></li>
+					<li><a href="#page3">인적</a></li>
+					<li><a href="#page4">학술</a></li>
+					<li><a href="#page5">경력</a></li>
+				</ul>
+			</div>
+		</div>
+		<section class="section1">
+			<h3>자기소개</h3>
+			<img id="" src="/week3/sourcecode/images/profile.png" />
+			<p>
+				동의과학대학교 컴퓨터소프트웨어과를 졸업하고 <br>
+				개발자로써 열심히 공부하고 있습니다.
+			</p>
+		</section>
+		<aside>
+			<h3>참조링크</h3>
+			<a href="https://github.com/SeungJin051">
+				<img class="portal" src="git.png" alt="깃허브 이동" style="width: 30px;" />
+			</a>
+		</aside>
+	</div>
+
+
+	<div data-role="page" class="content" id="page3">
+		<div data-role="header">
+			<h1>임승진</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page2">소개</a></li>
+					<li><a href="#page3" class="ui-btn-active">인적</a></li>
+					<li><a href="#page4">학술</a></li>
+					<li><a href="#page5">경력</a></li>
+				</ul>
+			</div>
+		</div>
+		<section class=" section1">
+			<h3>인적사항</h3>
+			<ul>
+				<li>성 명 : 임승진</li>
+				<li>생년월일 : 2001. 05. 30</li>
+				<li>주 소 : 부산광역시 남구 감만 우성스마트시티뷰 103동 203호</li>
+				<li>연 락 처 : 010-1234-5678</li>
+				<li>학 력
+					<table id="year-table" border="1">
+						<thead>
+							<tr>
+								<th>졸업년도</th>
+								<th>출신학교</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2024. 2.</td>
+								<td> 동의과학대학 컴퓨터소프트웨어과 졸업</td>
+							</tr>
+						</tbody>
+					</table>
+				</li>
+			</ul>
+		</section>
+		<img id="logo" src="logo.png" />
+		<aside>
+			<h3>참조링크</h3>
+			<a href="https://github.com/SeungJin051">
+				<img class="portal" src="git.png" alt="깃허브 이동" style="width: 30px;" />
+			</a>
+		</aside>
+	</div>
+
+	<div class="content" data-role="page" id="page4">
+		<div data-role="header">
+			<h1>임승진</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page2">소개</a></li>
+					<li><a href="#page3">인적</a></li>
+					<li><a href="#page4" class="ui-btn-active">학술</a></li>
+					<li><a href="#page5">경력</a></li>
+				</ul>
+			</div>
+		</div>
+		<section class="section1">
+			<h3>프로젝트</h3>
+			<ul>
+				<li>대학생할 chatbot - 디트 AI</li>
+			</ul>
+			<img src="ai.png" alt="" style="width: 120px">
+			<h3>수상</h3>
+			<ul>
+				<img src="pathhack.jpeg" width=100 />
+				<li>교내 개발 부트캠프</li>
+				<li>교외 패스핵 메이커톤 스폰서상</li>
+			</ul>
+		</section>
+		<aside>
+			<h3>참조링크</h3>
+			<a href="https://github.com/SeungJin051">
+				<img class="portal" src="git.png" alt="깃허브 이동" style="width: 30px;" />
+			</a>
+		</aside>
+	</div>
+
+	<div class="content" data-role="page" id="page5">
+		<div data-role="header">
+			<h1>임승진</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page2">소개</a></li>
+					<li><a href="#page3">인적</a></li>
+					<li><a href="#page4">학술</a></li>
+					<li><a href="#page5" class="ui-btn-active">경력</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<h3>세미나(연수)</h3>
+		<ul>
+			<li>2023 1학기 HTML & CSS 멘토링 </li>
+			<li>2023 2학기 캡스톤 프로젝트</li>
+		</ul>
+		<div id=" pic-container">
+			<img src="project2.jpeg" alt="" width="200px">
+			<img src="project1.jpeg" alt="" width="200px">
+		</div>
+		<aside>
+			<h3>참조링크</h3>
+			<a href="https://github.com/SeungJin051">
+				<img class="portal" src="git.png" alt="깃허브 이동" style="width: 30px;" />
+			</a>
+		</aside>
+	</div>
+
+
+
+
+
+
+</body>
+
+</html>
