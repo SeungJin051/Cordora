@@ -1,0 +1,219 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+		/* Set the page content width to 100% */
+		.ui-content {
+			width: 100%;
+		}
+
+		/* Center the gallery container */
+		.gallery-container {
+			display: flex;
+			justify-content: center;
+		}
+
+		/* Style the gallery list */
+		.gallery {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			/* Center-align the list items horizontally */
+		}
+
+		.gallery li {
+			width: 50%;
+			/* Two images per row */
+			text-align: center;
+			padding: 5px;
+		}
+
+		.gallery li a {
+			display: block;
+			text-decoration: none;
+			border: 2px solid #333;
+			/* Border around images */
+		}
+
+		.gallery li img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+			/* Center-align the images horizontally */
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<div data-theme="b">
+		<div data-role="page" id="home">
+			<div data-role="header" data-theme="b">
+				<h1>동의과학대학교 소개 앱</h1>
+			</div>
+			<div data-role="content" style="text-align:center">
+				<img src="https://i.namu.wiki/i/hoSG8yO_ZPlqupOJHL6LQc8WDWpzW8nYbSudP6_1NjtwiYwWIwF6n2RkAwbY1G85DP8QXXWRap2v3icBB5HKgkwg5burs6R6UjlAe4BVfr2uQjuAWkXQMshJCgo-khaPCgeJWvSAgeHYn58x7vqNLQ.svg"
+					width="150px">
+				<ul data-role="listview" data-inset="true" style="padding-right: 30px">
+					<li><a href="#intro" data-rel="dialog">컴퓨터소프트웨어과 소개</a></li>
+					<li><a href="#movie" data-rel="dialog">컴퓨터소프트웨어과 영상</a></li>
+					<li><a href="#wizard3-1" data-rel="dialog">컴퓨터소프트웨어과 AI∙IoT특화교육</a></li>
+					<li><a href="#gallery" data-inset="true">컴퓨터소프트웨어과 포토 갤러리</a></li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>202230752 임승진</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="intro" data-theme="b">
+			<div data-role="header" data-theme="b">
+				<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+				<h1>컴퓨터소프트웨어과 소개</h1>
+			</div>
+			<div data-role="content">
+				<div style="text-align:center">
+					<img src="dit_cs.png" width="400px">
+				</div>
+				<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+					<div data-role="collapsible" data-collapsed="false">
+						<h3>연혁</h3>
+						<p>
+							우리 컴퓨터소프트웨어과는 1983년 3월 모집정원 132명을 시작으로 하여 오늘에 이르고 있습니다.
+							30여년이 넘는 시간동안 수 많은 IT 분야의 인재들을 길러냈습니다. 급격하는 IT 관련 사회 변화에 적극적으로 대응하여 첨단 기술을 선도적으로 교과과정에
+							도입함으로써 현장 실무에 투입되어도 손색이 없는 인재를 배출해왔다고 자부하며, 우리 학과를 졸업한 동문들은 기업의 임직원, 교수, 연구소 연구원, 교사, 사업가 등
+							다양한 분야에서 각자의 역할을 다하고 있습니다. <br>
+							2011년 9월부터 부산광역시와 부산정보산업진흥원이 부산지역 모바일 선업 활성화 프로그램의 일환으로 추진한 '모바일 앱 센터'가 컴퓨터소프트웨어과에 신설되었으며,
+							현재로는 부산시 AI서브센터라는 이름으로 변경되어 지역사회의 인공지능 기술을 보급하는데 앞장서고 있습니다.
+						</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>교육목표</h3>
+						<p>
+							스마트 IT산업을 선도하는 실력 있는 소프트웨어 개발 전문가 양성을 목표로 체계적인 이론, <br>
+							팀프로젝트, 산학연계에 대한 실무중심 교육을 실시한다.
+						</p>
+						<ul>
+							<li>1. IT분야 전문기술인력 양성</li>
+							<li>2. 실무능력중심 맞춤형 인재 양성</li>
+							<li>3. 사회와 기업이 요구하는 건실한 인재 양성</li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h3>교수 소개</h3>
+						<h5>
+							2023, 현재 재직 중인 교수 및 조교
+						</h5>
+						<img src="1.png" alt="허봉식" width="435px" height="150px">
+						<img src="2.png" alt="김진숙" width="435px" height="150px">
+						<img src="3.png" alt="김경민" width="435px" height="150px">
+						<img src="4.png" alt="김주현" width="435px" height="150px">
+						<img src="5.png" alt="설재혁" width="435px" height="150px">
+
+					</div>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>202230752 임승진</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="movie" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>학과 시설 및 홍보 동영상</h1>
+			</div>
+			<div data-role="content">
+				<div class="ui-bar ui-bar-a">학과 시설 VR</div><br />
+				<li>
+					<iframe width="100%" height="240" src="https://www.dit.ac.kr/_vr/dept0606/01/tour.html"></iframe>
+				</li>
+				<br />
+				<div class="ui-bar ui-bar-a">학과 홍보 동영상</div><br />
+				<li>
+					<iframe width="100%" height="240"
+						src="https://www.youtube.com/embed/pOP6scBvlOU?si=yxswxP-qkqfQqYaP" title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
+				</li>
+			</div>
+			<div data-role="footer" data-theme="b">
+			</div>
+		</div>
+
+		<div data-role="page" id="wizard3-1">
+			<div data-role="header">
+				<h1>AI 코딩 클럽</h1>
+			</div>
+			<div data-role="content">
+				<img src="coding_club.png" alt="" width="100%">
+				<p class="ui-bar ui-bar-e">
+					해커톤 대회 등에 출품하여 우수한 성과를 내고 있다.
+
+					2020년 전국 최대 규모인 대학생 K-해커톤 대회에서 COVID-19 예방를 위한 인공지능 마스크 시스템을 개발하여 과학기술부장관상인 대상을 수상하였으며
+					AI 헬스 트레이너, 청각장애인을 AI 스피커 대화시스템, AI 비젼 도어록, AI 드론 등 다양한 AI/IoT 융합 제품 및 서비스 개발하고 있다.
+				</p><br>
+			</div>
+			<div data-role="footer">
+				<a href="#home" data-direction="reverse">이전</a>
+				<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+			</div>
+		</div>
+
+		<div data-role="page" id="wizard3-2">
+			<div data-role="header">
+				<h1>AI 카페</h1>
+			</div>
+			<div data-role="content">
+				<img src="aicafe.png" alt="" width="100%">
+				<p class="ui-bar ui-bar-e">
+					4차 산업혁명의 핵심 인공지능을 쉽고 재밌게 배우는 AI 카페는 학생들이 인공지능을 활용하는 다양한 실제 사례를 접할 수 있는 체험형 공간이자
+					인공지능(AI), 사물인터넷(IoT), 빅데이터 등 4차 산업혁명 시대 핵심기술에 대한 수준별 교육이 이뤄지는 미래형 강의실이다.
+
+					AI 카페는 AI존과 VR존으로 구성되어 있으며 AI존에서는 비전과 음성 인식 기반 AI 플랫폼을 체험해 볼 수 있으며, AI 자율주행차‧스피커‧드론 등
+					AI 기술을 접목한 각종 스마트 기기뿐만 아니라, 컴퓨터소프트웨어과 학생들이 제작한 AI 프로젝트 결과물이 전시 중이다.
+				</p><br>
+				</audio>
+			</div>
+			<div data-role="footer">
+				<a href="#wizard3-1" data-direction="reverse">이전</a>
+				<a href="#home">Home</a>
+			</div>
+		</div>
+
+		<div data-role="page" id="gallery" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+				<h1>학과 포토 갤러리</h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="picture" class="gallery">
+					<li><a href="1-1.png" rel="external"><img src="1-1.png" alt="이미지 1" /></a></li>
+					<li><a href="1-2.png" rel="external"><img src="1-2.png" alt="이미지 2" /></a></li>
+					<li><a href="1-3.png" rel="external"><img src="1-3.png" alt="이미지 3" /></a></li>
+					<li><a href="1-4.png" rel="external"><img src="1-4.png" alt="이미지 4" /></a></li>
+					<li><a href="1-5.png" rel="external"><img src="1-5.png" alt="이미지 5" /></a></li>
+					<li><a href="1-6.png" rel="external"><img src="1-6.png" alt="이미지 6" /></a></li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>202230752 임승진</h1>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
