@@ -12,7 +12,9 @@
 		$(document).on("pagecreate", "#jQuery_gallery", function () {
 			var currentIndex = 0;
 			var slides = $(".mySlides");
-			var interval = 3000; // 이미지 변경 간격 (밀리초)
+			var interval;
+			var intervalDuration = 2000; // 이미지 변경 간격 (밀리초)
+			var isPlaying = false;
 
 			function showSlide(index) {
 				slides.hide();
@@ -24,13 +26,28 @@
 				showSlide(currentIndex);
 			}
 
+			function toggleSlideshow() {
+				if (isPlaying) {
+					clearInterval(interval);
+					$("#startStopButton").text("시작");
+				} else {
+					interval = setInterval(nextSlide, intervalDuration);
+					$("#startStopButton").text("중지");
+				}
+				isPlaying = !isPlaying;
+			}
+
 			// 초기 슬라이드 표시
 			showSlide(currentIndex);
 
-			// 슬라이드 변경을 위한 타이머 설정
-			setInterval(nextSlide, interval);
+			// 시작/중지 버튼 클릭 이벤트 핸들러 설정
+			$("#startStopButton").on("click", toggleSlideshow);
+
+			// 슬라이드 쇼 자동 시작
+			toggleSlideshow();
 		});
 	</script>
+
 	<style>
 		.Slidesbackground {
 			margin: 0;
@@ -309,6 +326,7 @@
 						<div class="mySlides fade">
 							<img src="1-6.png" class="slideshow-image">
 						</div>
+						<a href="#" id="startStopButton" class="ui-btn ui-btn-b">시작</a>
 					</div>
 				</span>
 			</div>
