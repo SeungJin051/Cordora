@@ -9,6 +9,8 @@
 - [3주차 학습내용](https://github.com/SeungJin051/Cordova/blob/main/week3/README.md "3")
 - [5주차 학습내용](https://github.com/SeungJin051/Cordova/blob/main/week5/README.md "5")
 - [6주차 학습내용](https://github.com/SeungJin051/Cordova/blob/main/week6/README.md "6")
+- [10주차 학습내용](https://github.com/SeungJin051/Cordova/blob/main/week6/README.md "6")
+
 
 ---
 
